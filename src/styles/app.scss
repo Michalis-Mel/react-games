@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//Font families
+$titles: "Titan One", cursive;
+$smallText: "Baloo 2", cursive;
+$text: "Boogaloo", cursive;
+
+//Colors
+$black: #141e30;
+$gray: #243b55;
+$light: #e7dfd0;
+
+//Responsive sizes
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1280px;
+
+body {
+  min-height: 100vh;
+  font-family: $smallText;
+  background: $black; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    $gray,
+    $black
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    $gray,
+    $black
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+input,
+textarea,
+select,
+p {
+  color: $light;
+  font-family: $text;
+}
+
+.row {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@import "home.scss";
+@import "header.scss";
