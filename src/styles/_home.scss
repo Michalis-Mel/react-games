@@ -1,21 +1,24 @@
 .home {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   #search {
-    margin: 0 20px 0 0;
-    flex: 0 0 30%;
-    width: 30%;
-    max-width: 660px;
+    margin: 0 auto 100px auto;
+    max-width: 700px;
+    width: 100%;
     box-sizing: border-box;
     position: relative;
 
     input {
-      background: #f3f5f6;
+      background: #fff;
       padding: 16px 50px 16px 25px;
       box-sizing: border-box;
       width: 100%;
-      font-size: 13px;
+      font-size: 22px;
       line-height: 14px;
-      color: var(--main-color);
+      color: #000;
       border: none;
+      border-radius: 20px;
     }
 
     #btn-search {
@@ -33,6 +36,7 @@
         font-size: 0;
         width: 100%;
         max-width: 100%;
+        cursor: pointer;
       }
     }
 
@@ -53,6 +57,22 @@
         max-width: 100%;
         font-size: 0;
       }
+    }
+  }
+  p.homeText {
+    font-family: $smallText;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+
+    img {
+      font-size: 0;
+      width: 100%;
+      max-width: 90%;
+      margin: 100px auto;
+      border-radius: 50px;
+      box-shadow: 0 0 30px #000;
     }
   }
 }

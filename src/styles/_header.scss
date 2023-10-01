@@ -1,2 +1,27 @@
 header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 20px 0;
+
+  .logo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-decoration: none;
+    font-size: 36px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      max-width: 100px;
+      width: 100%;
+      font-size: 0;
+      margin-bottom: 8px;
+    }
+  }
 }
