@@ -1,9 +1,10 @@
 .home {
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto 50px auto;
+  text-align: center;
   #search {
-    margin: 0 auto 100px auto;
+    margin: 0 auto 40px auto;
     max-width: 700px;
     width: 100%;
     box-sizing: border-box;
@@ -59,20 +60,47 @@
       }
     }
   }
+
+  button.clear {
+    width: 250px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 2px solid $light;
+    color: $light;
+    font-size: 24px;
+    border-radius: 20px;
+    margin: 0 auto 50px auto;
+    font-family: $text;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: $light;
+      color: $black;
+    }
+  }
   p.homeText {
     font-family: $smallText;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
 
     img {
       font-size: 0;
       width: 100%;
-      max-width: 90%;
-      margin: 100px auto;
+      max-width: 600px;
+      margin: 40px auto;
       border-radius: 50px;
       box-shadow: 0 0 30px #000;
     }
+  }
+
+  h3.error {
+    font-size: 36px;
   }
 }

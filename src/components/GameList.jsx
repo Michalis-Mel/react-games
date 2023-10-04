@@ -4,7 +4,7 @@ import Game from "./Game";
 const GameList = (games) => {
   const gamesArray = Object.values(games);
   return (
-    <>
+    <div className="gamelist">
       {gamesArray.length ? (
         gamesArray.map((game) =>
           game.map((insideGame) => (
@@ -16,7 +16,7 @@ const GameList = (games) => {
           <h3>Loading...</h3>
         </>
       )}
-    </>
+    </div>
   );
 };
 

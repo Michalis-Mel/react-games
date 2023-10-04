@@ -9,6 +9,9 @@ const Header = () => {
       <Link to="/" className="logo">
         <img src={game} alt="ReactGameHub" /> ReactGameHub
       </Link>
+      <Link to="/wishlist" className="wish">
+        My Wishlist
+      </Link>
     </header>
   );
 };

@@ -64,6 +64,11 @@ const Home = () => {
           <img src={close} alt="close" />
         </span>
       </form>
+      {games.length > 0 && (
+        <button className="clear" onClick={() => setGames([])}>
+          Clear Games
+        </button>
+      )}
       {games.length === 0 && error.length === 0 && (
         <p className="homeText">
           Welcome to ReactGameHub, your ultimate gaming search destination!
@@ -77,16 +82,16 @@ const Home = () => {
           seasoned player or a rookie in the gaming realm, ReactGameHub is your
           gateway to an ever-expanding world of thrilling adventures. <br />
           <br />
+          <img src={gamer} alt="Gamer" />
           Don&apos;t miss out on the hottest releases, hidden gems, or classic
           favorites. Begin your gaming quest now and uncover the gaming
           experiences that await you. Enter your game title, press search, and
           let the gaming journey begin!
-          <img src={gamer} alt="Gamer" />
         </p>
       )}
 
       {games.length > 0 && <GameList games={games} />}
-      {error.length > 0 && <h3>{error}</h3>}
+      {error.length > 0 && <h3 className="error">{error}</h3>}
     </div>
   );
 };
